@@ -3,4 +3,5 @@ cron "datasiftupdater" do
   minute "*"
   weekday "*"
   command "bundle exec rake job:datasift_filter_updater"
+  user "webapp"
 end
