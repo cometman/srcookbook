@@ -1,8 +1,9 @@
 # Define the following attributes to pin the version of Ruby installed
 # by Amazon's recipes.  This content should go into custom JSON on opsworks
-node.normal[:opsworks][:ruby_version] = '2.0.0'
-node.normal[:ruby][:major_version] = '2.0'
-node.normal[:ruby][:full_version] = '2.0.0'
+node.normal[:opsworks][:ruby_version] = "2.0.0"
+node.normal[:ruby][:major_version] = "2.0"
+node.normal[:ruby][:full_version] = "2.0.0"
+node.normal[:passenger][:gems_path] = [ '/usr/share/ruby/gems/2.0', '/home/ec2-user/.gem/ruby/2.0', '/usr/local/share/ruby/gems/2.0' ]
 # node.normal[:ruby][:patch] = 'p392'
 # node.normal[:ruby][:pkgrelease] = '1'
 node.normal["emacs"]["packages"] = ["emacs23-nox"]
