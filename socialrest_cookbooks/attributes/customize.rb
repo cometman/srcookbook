@@ -17,4 +17,4 @@ normal["opsworks"]["skip_uninstall_of_other_rails_stack"] = true
 # node.default["generate_and_configure_ssl"] = true
 
 # Install and manage bundler
-#normal["opsworks_bundler"]["manage_package"] = true
+node["opsworks_bundler"]["manage_package"] = true
